@@ -1,0 +1,68 @@
+/*
+    Yazi tipi icin google link html paste css icin css paste yapıldi
+    .body yerine body yazildigi icin direkt body div icerisindeki hepsine etki edecektir
+    style ile html mantigi
+*/
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.border-btn {
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 17.5px;
+}
+
+
+.nav-button {
+    border-radius: 50px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+
+.nav-property {
+    background-color: rgb(255, 192, 23);
+    border-bottom: 1px solid rgb(47, 47, 47);
+}
+
+.font-size {
+    font-size: 90px;
+    color: black;
+}
+
+.font-size2 {
+    font-size: 22px;
+    color: black;
+}
+
+.nav-bottom-pad {
+    padding-top: 4rem; 
+    padding-bottom: 4rem;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.date-set {
+    opacity: 50%;
+    font-size: 13px;
+}
+
+.touch {
+    font-size: 14px;
+    opacity: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.header {
+    font-size: 25px;    
+}

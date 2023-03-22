@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <!--cdn fontawsome google arattım all icons copy edildi ve paste edildi-->
+    <!--sonrasında sececegim icon direkt copy-paste yapabilirim-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Text Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Righteous&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="medium.css">
+
+    <title>Medium</title>
+
+</head>
+
+<body>
+    <!--navbar div icine aldık ve style ile background ve border verdik
+    border-bottom ile sadece altta olmasını solid ile kalın olmasını son olarak renk verildi-->
+    <div class="nav-property fixed-top"> <!--fixed top nav her sayfa asagıda hareket ederken sayfamda gozukmesini saglar-->
+        <div class="container">
+            <!--ilk olarak nav icin bootstrap icerisinden nav copy paste alındı-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="medium.html">    
+                    <img style="height: 3rem;" src="image/medium_img.png" alt="head_pic">
+                    <strong style="margin-left: 0.5rem;">Medium</strong>
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto"> <!--ms-auto ile direkt sol tarafa yapıstır demek oluyor-->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Our Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Membership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Write</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-dark text-light nav-button" href="#">
+                                    <span style="font-size: 13px;">Get Started</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="nav-property nav-bottom-pad" style="margin-top: 4rem; background-color: rgb(255, 192, 23);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="font-size">
+                        Stay curious.
+                    </h1>
+                    <h4 class="font-size2 mt-4">
+                        Discover stories, thinking, and expertise 
+                    </h4>
+                    <h4 class="font-size2">
+                        from writers on any topic.
+                    </h4>
+                    <a href="medium.html" class="btn btn-outline-dark mt-4 border-btn">
+                        Start Reading
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <img style="margin-left: 13rem; height: 20rem; 
+                    border-radius: 50%; border: 10px solid rgb(255, 216, 110);" 
+                    src="image/mediumworld.png" alt="image_world">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 mb-2">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <span style="margin-left: 1rem;">Trending on Medium</span>
+            </div>
+
+            <!--article-1-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            01
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="https://picsum.photos/id/237/200/300" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                            Arthur Hayes</strong> in <strong>Entrepreneur's Handbook</strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>Kaisaki</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">Mar 17</li>
+                            <li class="list-inline-item date-set">31 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-1-end-->
+
+            <!--article-2-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            02
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="https://picsum.photos/id/33/200/300" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                            Tom Cooper</strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>Ukraine War, 20 March 2023</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">Mar 20</li>
+                            <li class="list-inline-item date-set">5 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-2-end-->
+
+            <!--article-3-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            03
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="https://picsum.photos/id/33/200/300" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;">
+                            <strong>
+                                Guodong (Troy) Zhaoi
+                            </strong> in <strong>Bootcamp</strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>Chat-GPT-Guide Tutorial</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">May 12</li>
+                            <li class="list-inline-item date-set">49 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-3-end-->
+
+            <!--article-4-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            04
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="https://picsum.photos/id/32/200/300" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;">
+                            <strong>
+                                Kevin Beaumontin
+                            </strong> in <strong>Duble Pulsar</strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>ICMP 2023/2024</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">May 7</li>
+                            <li class="list-inline-item date-set">20 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-4-end-->
+            
+            <!--article-5-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            05
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="https://picsum.photos/id/31/200/300" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;">
+                            <strong>
+                                Villie Osman
+                            </strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>Chess again ChatGPT</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">Mar 17</li>
+                            <li class="list-inline-item date-set">31 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-5-end-->
+
+            <!--article-6-->
+            <article class="col-sm-4 mb-2">
+                <div class="row mt-2">
+                    <div class="col-sm-1">
+                        <h4 class="text-black-50">
+                            06
+                        </h4>     
+                    </div>
+                    <div class="col-sm-10">
+                        <img src="image/self.jpeg" alt="profile-1" 
+                        class="profile">
+                        <span style="font-size: 13px; margin-left: 0.5rem;">
+                            <strong>
+                                Oktay Altunkaya
+                            </strong>
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>Coding HTML/CSS/BOOTSTRAP</strong> 
+                        </h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item date-set">Mart 22 2023</li>
+                            <li class="list-inline-item date-set">1000 min read</li>
+                            <li class="list-inline-item date-set">
+                                <i class="fa-regular fa-sun"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!--article-6-end-->    
+        </div>
+
+        <hr>
+        
+        <div class="row">
+            <div class="col-sm-8">
+
+                <!--Header-1-->
+                <article>
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <img src="https://picsum.photos/id/237/200/300" alt="profile-1" 
+                            class="profile">
+                            <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                                Arthur Hayes</strong> in <strong>Entrepreneur's Handbook</strong>
+                            </span>
+                            <h6 class="mt-2 header">
+                                <strong>When Worlds Collide</strong> 
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed neque recusandae laboriosam architecto, hic nesciunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, optio.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item date-set">May 12</li>
+                                <li class="list-inline-item date-set">49 min read</li>
+                                <li class="list-inline-item">
+                                    <span class="badge bg-light text-dark">Art</span>
+                                </li>
+                                <li class="list-inline-item date-set">
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="w-100" src="https://picsum.photos/id/98/400/250" alt="img-1">
+                            <!--w100 alanı doldurur-->
+                        </div>
+                    </div>
+                </article>
+                <!--Header-1-end-->
+
+                <!--Header-2-->
+                <article>
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <img src="https://picsum.photos/id/11/200/300" alt="profile-1" 
+                            class="profile">
+                            <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                                Arthur Hayes</strong> in <strong>Entrepreneur's Handbook</strong>
+                            </span>
+                            <h6 class="mt-2 header">
+                                <strong>It’s Been 20 Years Since We Invaded Iraq. 
+                                    I Am Still in the Desert.</strong> 
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed neque recusandae laboriosam architecto, hic nesciunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, optio.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item date-set">May 12</li>
+                                <li class="list-inline-item date-set">49 min read</li>
+                                <li class="list-inline-item">
+                                    <span class="badge bg-light text-dark">Art</span>
+                                </li>
+                                <li class="list-inline-item date-set">
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="w-100" src="https://picsum.photos/id/18/400/250" alt="img-1">
+                        </div>
+                    </div>
+                </article>
+                <!--Header-2-end-->
+
+                <!--Header-3-->
+                <article>
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <img src="https://picsum.photos/id/27/200/300" alt="profile-1" 
+                            class="profile">
+                            <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                                Arthur Hayes</strong> in <strong>Entrepreneur's Handbook</strong>
+                            </span>
+                            <h6 class="mt-2 header">
+                                <strong>GPT-4 vs. ChatGPT: An Exploration of Training,
+                                Performance, Capabilities, and Limitations</strong> 
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed neque recusandae laboriosam architecto, hic nesciunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, optio.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item date-set">May 12</li>
+                                <li class="list-inline-item date-set">49 min read</li>
+                                <li class="list-inline-item">
+                                    <span class="badge bg-light text-dark">Art</span>
+                                </li>
+                                <li class="list-inline-item date-set">
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="w-100" src="https://picsum.photos/id/90/400/250" alt="img-1">
+                        </div>
+                    </div>
+                </article>
+                <!--Header-3-end-->
+
+                <!--Header-4-->
+                <article>
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <img src="https://picsum.photos/id/31/200/300" alt="profile-1" 
+                            class="profile">
+                            <span style="font-size: 13px; margin-left: 0.5rem;"><strong>
+                                Arthur Hayes</strong> in <strong>Entrepreneur's Handbook</strong>
+                            </span>
+                            <h6 class="mt-2 header">
+                                <strong>The Antidote to Envy</strong> 
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed neque recusandae laboriosam architecto, hic nesciunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, optio.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item date-set">May 12</li>
+                                <li class="list-inline-item date-set">49 min read</li>
+                                <li class="list-inline-item">
+                                    <span class="badge bg-light text-dark">Art</span>
+                                </li>
+                                <li class="list-inline-item date-set">
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="w-100" src="https://picsum.photos/id/88/400/250" alt="img-1">
+                        </div>
+                    </div>
+                </article>
+                <!--Header-4-end-->
+            
+            </div> <!--Header's End-->
+            
+            
+            <!--Aside Start-->
+            <div class="col-sm-4 mt-3">
+                <h6>
+                    <small>
+                        <strong> Discover more of what matters to you </strong>
+                    </small>
+                </h6>
+                <ul class="list-inline mt-3">
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Lorem</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Programming</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Data</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>ChatGPT</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Cooms</small>
+                        </button>
+                    </li>
+                </ul>
+                
+                <ul class="list-inline">
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Self-Improve</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Politics</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Trend</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Vocab</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Speak</small>
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>lorem.</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Ipsum</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Dolar</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Set</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Reludum</small>
+                        </button>
+                    </li>
+                    <li class="list-inline-item date-set">
+                        <button type="button" class="btn btn-sm btn-outline-dark">
+                            <small>Tus</small>
+                        </button>
+                    </li>
+                </ul>
+                
+                <hr>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="touch" href="#">Help</a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a class="touch" href="#">Status</a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a class="touch" href="#">Writers</a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a class="touch" href="#">Blog</a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a class="touch" href="#">Careers</a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a class="touch" href="#">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="touch" href="#">Terms</a>
+                    </li>
+                    <li class="list-inline-item mt-3">
+                        <a class="touch" href="#">About</a>
+                    </li>
+                </ul>
+
+            </div> <!--Aside-End-->
+    
+    </div> <!--container-end-div-->
+
+
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
